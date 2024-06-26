@@ -11,6 +11,8 @@ jobs:
       run: cd ./DotnetTemplate.Web && dotnet build # Command to run
     - name: Test C#
       run: dotnet test
+    - name: Install dependencies
+      run: cd ./DotnetTemplate.Web && npm i
     - name: Build TS
       run: cd ./DotnetTemplate.Web && npm run build
     - name: Run Lint
