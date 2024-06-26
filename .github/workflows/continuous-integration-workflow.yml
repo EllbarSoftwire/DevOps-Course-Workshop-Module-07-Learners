@@ -10,7 +10,7 @@ jobs:
     - name: Build C#       # Name of step
       run: cd ./DotnetTemplate.Web && dotnet build # Command to run
     - name: Test C#
-      run: dotnet run
+      run: dotnet test
     - name: Build TS
       run: npm run build
     - name: Run Lint
