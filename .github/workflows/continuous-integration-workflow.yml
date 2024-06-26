@@ -12,7 +12,7 @@ jobs:
     - name: Test C#
       run: dotnet test
     - name: Build TS
-      run: npm run build
+      run: cd ./DotnetTemplate.Web && npm run build
     - name: Run Lint
       run: npm run lint
     - name: Run TS test
