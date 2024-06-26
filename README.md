@@ -1,3 +1,5 @@
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 # Workshop Module 07
 
 This repository is for learners on Corndel's DevOps apprenticeship.
