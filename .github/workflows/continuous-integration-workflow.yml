@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4 # Adds a step to checkout the repository code
     - name: Build C#       # Name of step
-      run: cd ~/DotnetTemplate.Web && dotnet build # Command to run
+      run: cd ./DotnetTemplate.Web && dotnet build # Command to run
     - name: Test C#
       run: dotnet run
     - name: Build TS
