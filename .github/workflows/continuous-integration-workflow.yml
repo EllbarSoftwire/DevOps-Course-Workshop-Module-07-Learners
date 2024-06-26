@@ -8,13 +8,14 @@ jobs:
     steps:
     - uses: actions/checkout@v4 # Adds a step to checkout the repository code
     - name: Build C#       # Name of step
-      run: cd ./DotnetTemplate.Web && dotnet build # Command to run
+      run: dotnet build # Command to run
+      working-directory: ./DotnetTemplate.Web
     - name: Test C#
       run: dotnet test
     - name: Install dependencies
-      run: cd ./DotnetTemplate.Web && npm i
+      run: npm i
     - name: Build TS
-      run: cd ./DotnetTemplate.Web && npm run build
+      run: npm run build
     - name: Run Lint
       run: npm run lint
     - name: Run TS test
